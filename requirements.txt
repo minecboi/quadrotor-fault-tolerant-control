@@ -1,0 +1,18 @@
+# Core Numerical and Scientific Computing
+numpy>=1.25.0
+scipy>=1.11.0
+pandas>=2.0.0
+
+# Visualization and Plotting
+matplotlib>=3.8.0
+
+# Flight Log Analysis (PX4 ULog parsing)
+pyulog>=1.2.4
+
+# MAVLink Telemetry and Failure Injection Link
+pymavlink>=2.4.50
+
+# PDF & DOCX Analysis / Report Generation
+pypdf>=5.0.0
+python-docx>=1.1.0
+

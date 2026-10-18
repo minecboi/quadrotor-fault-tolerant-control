@@ -1,0 +1,175 @@
+{
+  "args": {
+    "conn": "udpin:0.0.0.0:14540",
+    "run_dir": "live_runs",
+    "imu_hz": 250.0,
+    "min_alt": 2.0,
+    "max_speed": 0.5,
+    "cal_start": 1.0,
+    "cal_len": 3.0,
+    "timeout": 180.0,
+    "thr_min": 0.4,
+    "k_sigma": null,
+    "n_consec": 3,
+    "win": 0.35,
+    "win_low": 0.25,
+    "low_alt": 3.0,
+    "need": 2,
+    "cooldown": 0.2,
+    "thrust_rise": 0.028,
+    "vz_thr": 0.6,
+    "drop_thr": 0.4,
+    "yaw_thr": 0.15,
+    "jit_min": 0.2,
+    "jit_ratio": 4.0,
+    "err_min": 0.11,
+    "out_rise": 0.03,
+    "yaw_free_above": 60.0,
+    "onset_gap": 1.0,
+    "onset_back": 1.5,
+    "tilt_min": 1.0,
+    "k_tilt": 5.8,
+    "tilt_exp": 1.0,
+    "thrust_exp": 1.0,
+    "mass": 2.0,
+    "jxx": 0.02167,
+    "arm": 0.248,
+    "g": 9.81,
+    "k_phys": 1.0,
+    "k_kin": 1.0,
+    "fit_r2": 0.6,
+    "fit_sigma": null,
+    "fit_wd": null,
+    "prefer": "auto"
+  },
+  "events": [
+    {
+      "t_trigger": 4142.272,
+      "t_decision": 4142.624,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        -0.02,
+        0.02
+      ],
+      "votes": 2,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.04474114788996442,
+          "thr": 0.028,
+          "ok": true
+        },
+        "sink": {
+          "value": 0.07083797900452932,
+          "thr": 0.6,
+          "ok": false,
+          "drop": 0.02734375
+        },
+        "yaw": {
+          "value": 0.041635689826581564,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.049074098922960614,
+          "thr": 0.2,
+          "ok": false
+        },
+        "track": {
+          "value": 0.2911288401191891,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": 0.0,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 1
+        }
+      },
+      "alt_at_trigger": 9.911,
+      "t_detect_s": 4142.272,
+      "t_confirmed_trigger_s": 4142.272,
+      "boot_ms": 4142272,
+      "motor_est": 1,
+      "confirm_delay_ms": 352,
+      "episode_len_ms": 0,
+      "power_left_est": null,
+      "power_loss_est_pct": null,
+      "estimate": {
+        "delta_tilt_deg": 0.078,
+        "loss_tilt": 0.4515867991980007,
+        "loss_out": null,
+        "thrust_ratio": null,
+        "method": "unavailable (no usable estimator)",
+        "disagree": false,
+        "onset_window_samples": 101,
+        "alpha_fit": 1.73,
+        "r2": 0.36,
+        "loss_fit": 3.0810861838950134,
+        "fit_sigma": 3,
+        "fit_wd": 16,
+        "fit_t0": 4142.2739,
+        "alpha_kin": 0.26,
+        "loss_kin": 0.455102669189098,
+        "dtheta_deg": 0.575,
+        "t_peak_ms": 198,
+        "loss_pct": null,
+        "power_left": null
+      },
+      "recommended_controller": "UNKNOWN"
+    }
+  ],
+  "rejected": [
+    {
+      "t_trigger": 4141.268,
+      "t_decision": 4141.62,
+      "motor_cand": 1,
+      "cos": [
+        0.999,
+        -0.999,
+        -0.036,
+        0.036
+      ],
+      "votes": 1,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.008934259355787622,
+          "thr": 0.028,
+          "ok": false
+        },
+        "sink": {
+          "value": 0.03592234514439501,
+          "thr": 0.6,
+          "ok": false,
+          "drop": 0.00189208984375
+        },
+        "yaw": {
+          "value": 0.03182865507043447,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.05122674326445249,
+          "thr": 0.2,
+          "ok": false
+        },
+        "track": {
+          "value": 0.1339235500497387,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": 0.0,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 1
+        }
+      },
+      "alt_at_trigger": 9.94
+    }
+  ]
+}

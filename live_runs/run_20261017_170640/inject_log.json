@@ -1,0 +1,114 @@
+{
+ "args": {
+  "conn": "udpin:0.0.0.0:14550",
+  "motors": [
+   1
+  ],
+  "type": "power",
+  "level": 0.3,
+  "ramp": 0.35,
+  "t_off": 2.0,
+  "t_on": 2.0,
+  "cycles": 3,
+  "gap": 0.0,
+  "tmin": 5.0,
+  "tmax": 15.0,
+  "min_alt": 3.5,
+  "run_s": 20.0,
+  "seed": null,
+  "out": "live_runs/latest/inject_log.json",
+  "check": false
+ },
+ "seed": 28865,
+ "t_inject_us": 150497158,
+ "events": [
+  {
+   "event": "armed_timer",
+   "motor": null,
+   "sim_t": 135.88,
+   "boot_us": 135880000,
+   "t_inject_planned": 150.49715867665367,
+   "seed": 28865
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 150.536,
+   "boot_us": 150536000,
+   "action": "scale",
+   "level": 0.93
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 150.576,
+   "boot_us": 150576000,
+   "action": "scale",
+   "level": 0.86
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 150.604,
+   "boot_us": 150604000,
+   "action": "scale",
+   "level": 0.79
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 150.644,
+   "boot_us": 150644000,
+   "action": "scale",
+   "level": 0.72
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 150.676,
+   "boot_us": 150676000,
+   "action": "scale",
+   "level": 0.65
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 150.708,
+   "boot_us": 150708000,
+   "action": "scale",
+   "level": 0.5800000000000001
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 150.748,
+   "boot_us": 150748000,
+   "action": "scale",
+   "level": 0.51
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 150.78,
+   "boot_us": 150780000,
+   "action": "scale",
+   "level": 0.44000000000000006
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 150.816,
+   "boot_us": 150816000,
+   "action": "scale",
+   "level": 0.37
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 150.856,
+   "boot_us": 150856000,
+   "action": "scale",
+   "level": 0.30000000000000004
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "args": {
+  "conn": "udpin:0.0.0.0:14550",
+  "motors": [
+   1
+  ],
+  "type": "power",
+  "level": 0.42,
+  "ramp": 5.0,
+  "t_off": 2.0,
+  "t_on": 2.0,
+  "cycles": 3,
+  "gap": 0.0,
+  "tmin": 5.0,
+  "tmax": 15.0,
+  "min_alt": 3.5,
+  "run_s": 20.0,
+  "seed": null,
+  "out": "live_runs/latest/inject_log.json",
+  "check": false
+ },
+ "seed": 801549,
+ "t_inject_us": 1632433937,
+ "events": [
+  {
+   "event": "armed_timer",
+   "motor": null,
+   "sim_t": 1620.82,
+   "boot_us": 1620820000,
+   "t_inject_planned": 1632.4339378281832,
+   "seed": 801549
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1632.94,
+   "boot_us": 1632940000,
+   "action": "scale",
+   "level": 0.942
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1633.436,
+   "boot_us": 1633436000,
+   "action": "scale",
+   "level": 0.884
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1633.94,
+   "boot_us": 1633940000,
+   "action": "scale",
+   "level": 0.826
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1634.436,
+   "boot_us": 1634436000,
+   "action": "scale",
+   "level": 0.768
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1634.94,
+   "boot_us": 1634940000,
+   "action": "scale",
+   "level": 0.71
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1635.436,
+   "boot_us": 1635436000,
+   "action": "scale",
+   "level": 0.6519999999999999
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1635.94,
+   "boot_us": 1635940000,
+   "action": "scale",
+   "level": 0.594
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1636.436,
+   "boot_us": 1636436000,
+   "action": "scale",
+   "level": 0.5359999999999999
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1636.94,
+   "boot_us": 1636940000,
+   "action": "scale",
+   "level": 0.478
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1637.436,
+   "boot_us": 1637436000,
+   "action": "scale",
+   "level": 0.41999999999999993
+  }
+ ]
+}

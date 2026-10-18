@@ -1,0 +1,42 @@
+{
+ "args": {
+  "conn": "udpin:0.0.0.0:14550",
+  "motors": [
+   2
+  ],
+  "type": "complete",
+  "level": 0.0,
+  "ramp": 5.0,
+  "t_off": 2.0,
+  "t_on": 2.0,
+  "cycles": 3,
+  "gap": 0.0,
+  "tmin": 5.0,
+  "tmax": 15.0,
+  "min_alt": 5.0,
+  "run_s": 20.0,
+  "seed": null,
+  "out": "runs/run_011_m2_complete_0_hover/inject_log.json",
+  "check": false
+ },
+ "seed": 718792,
+ "t_inject_us": 33715724,
+ "events": [
+  {
+   "event": "armed_timer",
+   "motor": null,
+   "sim_t": 20.54,
+   "boot_us": 20540000,
+   "t_inject_planned": 33.7157240416132,
+   "seed": 718792
+  },
+  {
+   "event": "inject",
+   "motor": 2,
+   "sim_t": 33.716,
+   "boot_us": 33716000,
+   "action": "off",
+   "level": null
+  }
+ ]
+}

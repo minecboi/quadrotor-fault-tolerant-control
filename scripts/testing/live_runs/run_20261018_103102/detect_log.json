@@ -1,0 +1,89 @@
+{
+  "args": {
+    "conn": "udpin:0.0.0.0:14540",
+    "run_dir": "live_runs",
+    "imu_hz": 250.0,
+    "min_alt": 3.0,
+    "max_speed": 0.5,
+    "cal_start": 1.0,
+    "cal_len": 3.0,
+    "thr_min": 0.4,
+    "k_sigma": null,
+    "n_consec": 3,
+    "win": 0.2,
+    "win_low": 0.18,
+    "low_alt": 3.0,
+    "need": 2,
+    "cooldown": 0.1,
+    "grace_sec": 1.2,
+    "thrust_rise": 0.028,
+    "vz_thr": 0.5,
+    "drop_thr": 0.3,
+    "yaw_thr": 0.15,
+    "jit_min": 0.2,
+    "jit_ratio": 4.0,
+    "err_min": 0.11,
+    "out_rise": 0.03
+  },
+  "events": [
+    {
+      "t_trigger": 124.172,
+      "t_decision": 124.372,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        -0.01,
+        0.01
+      ],
+      "votes": 3,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.042089033974541556,
+          "thr": 0.028,
+          "ok": true
+        },
+        "sink": {
+          "value": 0.11410215023040979,
+          "thr": 0.5,
+          "ok": false,
+          "drop": 0.0164794921875
+        },
+        "yaw": {
+          "value": 0.13764647305688676,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.7355570510891183,
+          "thr": 0.2,
+          "ok": true
+        },
+        "track": {
+          "value": 1.083402266840669,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": -0.03024558618841955,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 3
+        }
+      },
+      "alt_at_trigger": 5.014,
+      "t_detect_s": 124.172,
+      "boot_ms": 124172,
+      "motor_est": 1,
+      "confirm_delay_ms": 200,
+      "effective_power_rho": 0.66,
+      "power_left_pct": 66.0,
+      "power_loss_est_pct": 34.0,
+      "recommended_controller": "ADAPTIVE",
+      "diagnostic": "yaw_spin(1.08rad/s)",
+      "escalation_reason": "sink(1.06m/s) + alt_drop(0.56m) + track_divergence(3.10rad/s)"
+    }
+  ],
+  "rejected": []
+}

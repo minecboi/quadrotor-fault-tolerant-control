@@ -1,0 +1,31 @@
+{
+ "log": "build/px4_sitl_default/rootfs/fs/log/2026-10-16/07_12_24.ulg",
+ "cal_window_s": [
+  9315.364,
+  9318.364
+ ],
+ "detected": true,
+ "t_detect": 11001.196,
+ "motor_est": 1,
+ "cos_to_each_motor": [
+  0.986,
+  -0.986,
+  -0.167,
+  0.167
+ ],
+ "residual_roll_pitch": [
+  3.302949670325398,
+  -2.3443152816311956
+ ],
+ "threshold": 2.0,
+ "mode": "plain angular-acceleration threshold",
+ "g": [
+  0.0,
+  0.0
+ ],
+ "t_detect_us": 11001196000,
+ "true_motor": 1,
+ "t_inject_us": 11001144000,
+ "latency_ms": 52.0,
+ "isolation_correct": true
+}

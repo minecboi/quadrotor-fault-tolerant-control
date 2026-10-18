@@ -1,0 +1,451 @@
+{
+  "args": {
+    "conn": "udpin:0.0.0.0:14540",
+    "run_dir": "live_runs",
+    "imu_hz": 250.0,
+    "min_alt": 2.0,
+    "max_speed": 0.5,
+    "cal_start": 1.0,
+    "cal_len": 3.0,
+    "thr_min": 0.4,
+    "k_sigma": null,
+    "n_consec": 3,
+    "win": 0.35,
+    "win_low": 0.18,
+    "low_alt": 3.0,
+    "need": 2,
+    "cooldown": 0.1,
+    "thrust_rise": 0.028,
+    "vz_thr": 0.5,
+    "drop_thr": 0.3,
+    "yaw_thr": 0.15,
+    "jit_min": 0.2,
+    "jit_ratio": 4.0,
+    "err_min": 0.11,
+    "out_rise": 0.03
+  },
+  "events": [
+    {
+      "t_trigger": 2074.892,
+      "t_decision": 2075.244,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        0.002,
+        -0.002
+      ],
+      "votes": 4,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.16397480566842837,
+          "thr": 0.028,
+          "ok": true
+        },
+        "sink": {
+          "value": 0.39586089361939375,
+          "thr": 0.5,
+          "ok": false,
+          "drop": 0.107696533203125
+        },
+        "yaw": {
+          "value": 0.21266287685674432,
+          "thr": 0.15,
+          "ok": true
+        },
+        "jitter": {
+          "value": 0.5230586203586522,
+          "thr": 0.2,
+          "ok": true
+        },
+        "track": {
+          "value": 1.1929000975753365,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": -0.014390802714122852,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 4
+        }
+      },
+      "alt_at_trigger": 9.99,
+      "t_detect_s": 2074.892,
+      "boot_ms": 2074891,
+      "motor_est": 1,
+      "confirm_delay_ms": 352,
+      "effective_power_rho": 1.0,
+      "power_left_pct": 100.0,
+      "power_loss_est_pct": 0.0,
+      "recommended_controller": "YAW-FREE",
+      "diagnostic": "yaw_spin(1.19rad/s) + track_divergence(1.19rad/s)"
+    },
+    {
+      "t_trigger": 2117.804,
+      "t_decision": 2118.156,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        0.018,
+        -0.018
+      ],
+      "votes": 4,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.08999937336478436,
+          "thr": 0.028,
+          "ok": true
+        },
+        "sink": {
+          "value": 0.18868620179713413,
+          "thr": 0.5,
+          "ok": false,
+          "drop": 0.066925048828125
+        },
+        "yaw": {
+          "value": 0.17243313669469473,
+          "thr": 0.15,
+          "ok": true
+        },
+        "jitter": {
+          "value": 0.38635724360472895,
+          "thr": 0.2,
+          "ok": true
+        },
+        "track": {
+          "value": 0.9242649837993224,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": -0.012392300095142472,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 3
+        }
+      },
+      "alt_at_trigger": 9.99,
+      "t_detect_s": 2117.804,
+      "boot_ms": 2117804,
+      "motor_est": 1,
+      "confirm_delay_ms": 352,
+      "effective_power_rho": 1.0,
+      "power_left_pct": 100.0,
+      "power_loss_est_pct": 0.0,
+      "recommended_controller": "YAW-FREE",
+      "diagnostic": "yaw_spin(0.92rad/s) + track_divergence(0.92rad/s)"
+    },
+    {
+      "t_trigger": 2174.672,
+      "t_decision": 2175.024,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        0.006,
+        -0.006
+      ],
+      "votes": 4,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.16260093591092994,
+          "thr": 0.028,
+          "ok": true
+        },
+        "sink": {
+          "value": 0.40850212860371476,
+          "thr": 0.5,
+          "ok": false,
+          "drop": 0.11962890625
+        },
+        "yaw": {
+          "value": 0.2123857124946137,
+          "thr": 0.15,
+          "ok": true
+        },
+        "jitter": {
+          "value": 0.5082986670846052,
+          "thr": 0.2,
+          "ok": true
+        },
+        "track": {
+          "value": 1.1773762774388332,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": -0.01509638073555658,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 3
+        }
+      },
+      "alt_at_trigger": 10.004,
+      "t_detect_s": 2174.672,
+      "boot_ms": 2174672,
+      "motor_est": 1,
+      "confirm_delay_ms": 352,
+      "effective_power_rho": 1.0,
+      "power_left_pct": 100.0,
+      "power_loss_est_pct": 0.0,
+      "recommended_controller": "YAW-FREE",
+      "diagnostic": "yaw_spin(1.18rad/s) + track_divergence(1.18rad/s)"
+    },
+    {
+      "t_trigger": 2359.7,
+      "t_decision": 2360.052,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        -0.01,
+        0.01
+      ],
+      "votes": 4,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.16401232583094927,
+          "thr": 0.028,
+          "ok": true
+        },
+        "sink": {
+          "value": 0.39181852547751955,
+          "thr": 0.5,
+          "ok": false,
+          "drop": 0.125762939453125
+        },
+        "yaw": {
+          "value": 0.21231763437662782,
+          "thr": 0.15,
+          "ok": true
+        },
+        "jitter": {
+          "value": 0.5183894331434034,
+          "thr": 0.2,
+          "ok": true
+        },
+        "track": {
+          "value": 1.192053111303264,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": -0.014496639632630814,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 3
+        }
+      },
+      "alt_at_trigger": 9.984,
+      "t_detect_s": 2359.7,
+      "boot_ms": 2359700,
+      "motor_est": 1,
+      "confirm_delay_ms": 352,
+      "effective_power_rho": 1.0,
+      "power_left_pct": 100.0,
+      "power_loss_est_pct": 0.0,
+      "recommended_controller": "YAW-FREE",
+      "diagnostic": "yaw_spin(1.19rad/s) + track_divergence(1.19rad/s)"
+    }
+  ],
+  "rejected": [
+    {
+      "t_trigger": 2073.908,
+      "t_decision": 2074.26,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        -0.012,
+        0.012
+      ],
+      "votes": 1,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.011883115058896387,
+          "thr": 0.028,
+          "ok": false
+        },
+        "sink": {
+          "value": 0.01628972619771637,
+          "thr": 0.5,
+          "ok": false,
+          "drop": 0.00689697265625
+        },
+        "yaw": {
+          "value": 0.03749693888361802,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.06806044786062464,
+          "thr": 0.2,
+          "ok": false
+        },
+        "track": {
+          "value": 0.16795692590697373,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": -0.002199653232812848,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 3
+        }
+      },
+      "alt_at_trigger": 10.012
+    },
+    {
+      "t_trigger": 2116.848,
+      "t_decision": 2117.2,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        0.01,
+        -0.01
+      ],
+      "votes": 1,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.011622405414334569,
+          "thr": 0.028,
+          "ok": false
+        },
+        "sink": {
+          "value": 0.02496783891013768,
+          "thr": 0.5,
+          "ok": false,
+          "drop": 0.014801025390625
+        },
+        "yaw": {
+          "value": 0.033228232719597135,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.044875937139644564,
+          "thr": 0.2,
+          "ok": false
+        },
+        "track": {
+          "value": 0.13027309388094782,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": -0.0013351717608217628,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 4
+        }
+      },
+      "alt_at_trigger": 10.026
+    },
+    {
+      "t_trigger": 2173.684,
+      "t_decision": 2174.036,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        0.016,
+        -0.016
+      ],
+      "votes": 1,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.012344920310233154,
+          "thr": 0.028,
+          "ok": false
+        },
+        "sink": {
+          "value": 0.02724099204064056,
+          "thr": 0.5,
+          "ok": false,
+          "drop": 0.009368896484375
+        },
+        "yaw": {
+          "value": 0.03724373639983902,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.07213208144352723,
+          "thr": 0.2,
+          "ok": false
+        },
+        "track": {
+          "value": 0.16692784591028756,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": -0.0023258538355855896,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 3
+        }
+      },
+      "alt_at_trigger": 10.024
+    },
+    {
+      "t_trigger": 2358.712,
+      "t_decision": 2359.064,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        -0.022,
+        0.022
+      ],
+      "votes": 1,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.013015634073316407,
+          "thr": 0.028,
+          "ok": false
+        },
+        "sink": {
+          "value": 0.017156407054390317,
+          "thr": 0.5,
+          "ok": false,
+          "drop": 0.0120849609375
+        },
+        "yaw": {
+          "value": 0.03850145488048179,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.07088377215638089,
+          "thr": 0.2,
+          "ok": false
+        },
+        "track": {
+          "value": 0.16699583065683915,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": -0.0022322340626045323,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 4
+        }
+      },
+      "alt_at_trigger": 10.013
+    }
+  ]
+}

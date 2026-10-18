@@ -1,0 +1,89 @@
+{
+  "args": {
+    "conn": "udpin:0.0.0.0:14540",
+    "run_dir": "live_runs",
+    "imu_hz": 250.0,
+    "min_alt": 2.0,
+    "max_speed": 0.5,
+    "cal_start": 1.0,
+    "cal_len": 3.0,
+    "timeout": 180.0,
+    "thr_min": 0.4,
+    "k_sigma": null,
+    "n_consec": 3,
+    "win": 0.35,
+    "win_low": 0.25,
+    "low_alt": 3.0,
+    "need": 2,
+    "cooldown": 0.2,
+    "thrust_rise": 0.028,
+    "vz_thr": 0.6,
+    "drop_thr": 0.4,
+    "yaw_thr": 0.15,
+    "jit_min": 0.2,
+    "jit_ratio": 4.0,
+    "err_min": 0.11,
+    "out_rise": 0.03,
+    "yaw_free_above": 60.0
+  },
+  "events": [
+    {
+      "t_trigger": 1271.464,
+      "t_decision": 1271.816,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        0.02,
+        -0.02
+      ],
+      "votes": 4,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.05663363837221891,
+          "thr": 0.028,
+          "ok": true
+        },
+        "sink": {
+          "value": 0.16132830042067187,
+          "thr": 0.6,
+          "ok": false,
+          "drop": 0.049468994140625
+        },
+        "yaw": {
+          "value": 0.16897768354419304,
+          "thr": 0.15,
+          "ok": true
+        },
+        "jitter": {
+          "value": 0.35251066531064223,
+          "thr": 0.2,
+          "ok": true
+        },
+        "track": {
+          "value": 0.814474942808705,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": 0.0,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 1
+        }
+      },
+      "alt_at_trigger": 9.942,
+      "t_detect_s": 1271.464,
+      "boot_ms": 1271464,
+      "motor_est": 1,
+      "confirm_delay_ms": 352,
+      "delta_tilt_deg": 4.44,
+      "power_loss_est_pct": 60.1,
+      "power_left_pct": 39.9,
+      "estimator": "tilt_kinematic",
+      "recommended_controller": "YAW-FREE"
+    }
+  ],
+  "rejected": []
+}

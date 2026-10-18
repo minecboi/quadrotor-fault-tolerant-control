@@ -1,0 +1,89 @@
+{
+  "args": {
+    "conn": "udpin:0.0.0.0:14540",
+    "run_dir": "live_runs",
+    "imu_hz": 250.0,
+    "min_alt": 3.0,
+    "max_speed": 0.5,
+    "cal_start": 1.0,
+    "cal_len": 3.0,
+    "thr_min": 0.4,
+    "k_sigma": null,
+    "n_consec": 3,
+    "win": 0.2,
+    "win_low": 0.18,
+    "low_alt": 3.0,
+    "need": 2,
+    "cooldown": 0.1,
+    "grace_sec": 1.2,
+    "thrust_rise": 0.028,
+    "vz_thr": 0.5,
+    "drop_thr": 0.3,
+    "yaw_thr": 0.15,
+    "jit_min": 0.2,
+    "jit_ratio": 4.0,
+    "err_min": 0.11,
+    "out_rise": 0.03
+  },
+  "events": [
+    {
+      "t_trigger": 25636.816,
+      "t_decision": 25637.016,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        -0.009,
+        0.009
+      ],
+      "votes": 3,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.04299690878537654,
+          "thr": 0.028,
+          "ok": true
+        },
+        "sink": {
+          "value": 0.13576686388707826,
+          "thr": 0.5,
+          "ok": false,
+          "drop": 0.020721435546875
+        },
+        "yaw": {
+          "value": 0.13863021676432694,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.7692657803153872,
+          "thr": 0.2,
+          "ok": true
+        },
+        "track": {
+          "value": 1.1177254021535843,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": -0.029091977459679064,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 3
+        }
+      },
+      "alt_at_trigger": 5.077,
+      "t_detect_s": 25636.816,
+      "boot_ms": 25636816,
+      "motor_est": 1,
+      "confirm_delay_ms": 200,
+      "effective_power_rho": 0.65,
+      "power_left_pct": 65.0,
+      "power_loss_est_pct": 35.0,
+      "recommended_controller": "ADAPTIVE",
+      "diagnostic": "yaw_spin(1.12rad/s)",
+      "escalation_reason": "sink(1.15m/s) + alt_drop(0.58m) + track_divergence(3.11rad/s)"
+    }
+  ],
+  "rejected": []
+}

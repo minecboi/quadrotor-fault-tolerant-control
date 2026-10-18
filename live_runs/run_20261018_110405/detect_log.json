@@ -1,0 +1,185 @@
+{
+  "args": {
+    "conn": "udpin:0.0.0.0:14550",
+    "run_dir": "live_runs",
+    "imu_hz": 250.0,
+    "min_alt": 2.0,
+    "max_speed": 0.5,
+    "cal_start": 1.0,
+    "cal_len": 3.0,
+    "thr_min": 0.8,
+    "k_sigma": null,
+    "n_consec": 3,
+    "win": 0.2,
+    "win_low": 0.18,
+    "low_alt": 3.0,
+    "need": 2,
+    "cooldown": 0.1,
+    "grace_sec": 1.2,
+    "thrust_rise": 0.028,
+    "vz_thr": 0.5,
+    "drop_thr": 0.3,
+    "yaw_thr": 0.15,
+    "jit_min": 0.2,
+    "jit_ratio": 4.0,
+    "err_min": 0.11,
+    "out_rise": 0.03
+  },
+  "events": [
+    {
+      "t_trigger": 83.456,
+      "t_decision": 83.656,
+      "motor_cand": 4,
+      "cos": [
+        0.507,
+        -0.507,
+        -0.862,
+        0.862
+      ],
+      "votes": 2,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.002500878333172696,
+          "thr": 0.028,
+          "ok": false
+        },
+        "sink": {
+          "value": 0.02922870676661596,
+          "thr": 0.5,
+          "ok": false,
+          "drop": 0.011627197265625
+        },
+        "yaw": {
+          "value": 0.5690766717597071,
+          "thr": 0.15,
+          "ok": true
+        },
+        "jitter": {
+          "value": 0.4317145516575789,
+          "thr": 0.2,
+          "ok": true
+        },
+        "track": {
+          "value": 0.028939099941741694,
+          "thr": 0.11,
+          "ok": false
+        },
+        "outputs": {
+          "value": 0.017233411740790627,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 4
+        }
+      },
+      "alt_at_trigger": 10.03,
+      "t_detect_s": 83.456,
+      "boot_ms": 83456,
+      "motor_est": 4,
+      "confirm_delay_ms": 200,
+      "effective_power_rho": 1.0,
+      "power_left_pct": 100.0,
+      "power_loss_est_pct": 0.0,
+      "recommended_controller": "ADAPTIVE",
+      "diagnostic": "benchmark_match(track=0.029->rho=1.00)"
+    }
+  ],
+  "rejected": [
+    {
+      "t_trigger": 82.292,
+      "t_decision": 82.492,
+      "motor_cand": 3,
+      "cos": [
+        -0.635,
+        0.635,
+        0.772,
+        -0.772
+      ],
+      "votes": 1,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": -0.0001788739185084598,
+          "thr": 0.028,
+          "ok": false
+        },
+        "sink": {
+          "value": -0.013472847296997718,
+          "thr": 0.5,
+          "ok": false,
+          "drop": -0.00250244140625
+        },
+        "yaw": {
+          "value": 0.024601659194409323,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.24868569030620377,
+          "thr": 0.2,
+          "ok": true
+        },
+        "track": {
+          "value": 0.0390136983308965,
+          "thr": 0.11,
+          "ok": false
+        },
+        "outputs": {
+          "value": 0.005527937986431697,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 4
+        }
+      },
+      "alt_at_trigger": 10.003
+    },
+    {
+      "t_trigger": 83.14,
+      "t_decision": 83.352,
+      "motor_cand": 4,
+      "cos": [
+        0.602,
+        -0.602,
+        -0.798,
+        0.798
+      ],
+      "votes": 1,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.009856832392955872,
+          "thr": 0.028,
+          "ok": false
+        },
+        "sink": {
+          "value": -0.04993059580188545,
+          "thr": 0.5,
+          "ok": false,
+          "drop": -0.004638671875
+        },
+        "yaw": {
+          "value": 0.44417012904874714,
+          "thr": 0.15,
+          "ok": true
+        },
+        "jitter": {
+          "value": 0.13862855712796207,
+          "thr": 0.2,
+          "ok": false
+        },
+        "track": {
+          "value": 0.0709800347120362,
+          "thr": 0.11,
+          "ok": false
+        },
+        "outputs": {
+          "value": 0.02107725345023348,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 3
+        }
+      },
+      "alt_at_trigger": 10.028
+    }
+  ]
+}

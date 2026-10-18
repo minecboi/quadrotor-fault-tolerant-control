@@ -1,0 +1,42 @@
+{
+ "args": {
+  "conn": "udpin:0.0.0.0:14550",
+  "motors": [
+   1
+  ],
+  "type": "prop",
+  "level": 0.5,
+  "ramp": 5.0,
+  "t_off": 2.0,
+  "t_on": 2.0,
+  "cycles": 3,
+  "gap": 0.0,
+  "tmin": 5.0,
+  "tmax": 15.0,
+  "min_alt": 5.0,
+  "run_s": 20.0,
+  "seed": null,
+  "out": "runs/run_014_m1_prop_0.5_hover/inject_log.json",
+  "check": false
+ },
+ "seed": 854842,
+ "t_inject_us": 125684667,
+ "events": [
+  {
+   "event": "armed_timer",
+   "motor": null,
+   "sim_t": 110.968,
+   "boot_us": 110968000,
+   "t_inject_planned": 125.68466775100609,
+   "seed": 854842
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 125.688,
+   "boot_us": 125688000,
+   "action": "scale",
+   "level": 0.5
+  }
+ ]
+}

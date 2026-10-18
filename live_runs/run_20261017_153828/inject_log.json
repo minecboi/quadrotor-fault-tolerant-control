@@ -1,0 +1,114 @@
+{
+ "args": {
+  "conn": "udpin:0.0.0.0:14550",
+  "motors": [
+   1
+  ],
+  "type": "power",
+  "level": 0.42,
+  "ramp": 5.0,
+  "t_off": 2.0,
+  "t_on": 2.0,
+  "cycles": 3,
+  "gap": 0.0,
+  "tmin": 5.0,
+  "tmax": 15.0,
+  "min_alt": 3.5,
+  "run_s": 20.0,
+  "seed": null,
+  "out": "live_runs/latest/inject_log.json",
+  "check": false
+ },
+ "seed": 665902,
+ "t_inject_us": 1696183709,
+ "events": [
+  {
+   "event": "armed_timer",
+   "motor": null,
+   "sim_t": 1689.892,
+   "boot_us": 1689892000,
+   "t_inject_planned": 1696.183709390234,
+   "seed": 665902
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1696.692,
+   "boot_us": 1696692000,
+   "action": "scale",
+   "level": 0.942
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1697.184,
+   "boot_us": 1697184000,
+   "action": "scale",
+   "level": 0.884
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1697.692,
+   "boot_us": 1697692000,
+   "action": "scale",
+   "level": 0.826
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1698.184,
+   "boot_us": 1698184000,
+   "action": "scale",
+   "level": 0.768
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1698.692,
+   "boot_us": 1698692000,
+   "action": "scale",
+   "level": 0.71
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1699.184,
+   "boot_us": 1699184000,
+   "action": "scale",
+   "level": 0.6519999999999999
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1699.692,
+   "boot_us": 1699692000,
+   "action": "scale",
+   "level": 0.594
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1700.184,
+   "boot_us": 1700184000,
+   "action": "scale",
+   "level": 0.5359999999999999
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1700.692,
+   "boot_us": 1700692000,
+   "action": "scale",
+   "level": 0.478
+  },
+  {
+   "event": "inject",
+   "motor": 1,
+   "sim_t": 1701.184,
+   "boot_us": 1701184000,
+   "action": "scale",
+   "level": 0.41999999999999993
+  }
+ ]
+}

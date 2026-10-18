@@ -1,0 +1,7 @@
+{
+ "motor": 1,
+ "type": "prop",
+ "level": 0.5,
+ "phase": "hover",
+ "healthy": false
+}

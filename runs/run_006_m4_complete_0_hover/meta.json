@@ -1,0 +1,7 @@
+{
+ "motor": 4,
+ "type": "complete",
+ "level": 0.0,
+ "phase": "hover",
+ "healthy": false
+}

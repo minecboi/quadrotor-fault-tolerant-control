@@ -1,0 +1,38 @@
+skipping 5 folder(s) without meta.json (incomplete/old runs): run_001_m1_complete_0_hover, run_002_healthy_hover, run_008_m1_power_0.3_hover, run_009_healthy_hover, run_016_healthy_hover
+
+=== threshold floor 2.0 rad/s^2 ===  (0 run(s) with errors skipped)
+detection rate : 11/11 = 1.00
+latency [ms]   : mean 232.4, worst 2056.0
+isolation acc. : 11/11
+false alarms   : 0 (healthy flights + pre-injection time), monitored ~5.6 min -> 0.00/min   [first alarm per log only]
+confusion matrix (rows true motor 1-4; cols est 1-4, missed):
+[[5 0 0 0 0]
+ [0 2 0 0 0]
+ [0 0 2 0 0]
+ [0 0 0 2 0]]
+level estimate (thrust/command of failed motor), mean absolute error:
+  tilt-based      : nan  over 11 run(s)
+  opposite-motor  : 0.126  over 3 run(s)
+  combined (mean) : nan  over 11 run(s)
+  tilt-based, calibrated on complete runs (alpha_ref=4.7 rad/s^2): 0.483  over 3 non-complete run(s)
+saved eval_dt06_level_est_vs_true_thr2.png
+saved eval_dt06_latency_vs_phase_thr2.png
+
+=== threshold floor 0.5 rad/s^2 ===  (0 run(s) with errors skipped)
+detection rate : 10/11 = 0.91
+latency [ms]   : mean 40.8, worst 48.0
+isolation acc. : 10/10
+false alarms   : 1 (healthy flights + pre-injection time), monitored ~5.6 min -> 0.18/min   [first alarm per log only]
+confusion matrix (rows true motor 1-4; cols est 1-4, missed):
+[[5 0 0 0 0]
+ [0 2 0 0 0]
+ [0 0 1 0 1]
+ [0 0 0 2 0]]
+level estimate (thrust/command of failed motor), mean absolute error:
+  tilt-based      : nan  over 10 run(s)
+  opposite-motor  : 0.128  over 3 run(s)
+  combined (mean) : nan  over 10 run(s)
+  tilt-based, calibrated on complete runs (alpha_ref=4.9 rad/s^2): 0.390  over 3 non-complete run(s)
+saved eval_dt06_level_est_vs_true_thr0.5.png
+saved eval_dt06_latency_vs_phase_thr0.5.png
+wrote eval_dt06_results.csv

@@ -1,0 +1,8 @@
+{
+ "motor": null,
+ "type": "healthy",
+ "level": 1.0,
+ "phase": "hover",
+ "healthy": true,
+ "seconds": 600.0
+}

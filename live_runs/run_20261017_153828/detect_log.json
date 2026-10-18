@@ -1,0 +1,186 @@
+{
+  "args": {
+    "conn": "udpin:0.0.0.0:14540",
+    "run_dir": "live_runs",
+    "imu_hz": 250.0,
+    "min_alt": 2.0,
+    "max_speed": 0.5,
+    "cal_start": 1.0,
+    "cal_len": 3.0,
+    "timeout": 180.0,
+    "thr_min": 0.4,
+    "k_sigma": null,
+    "n_consec": 3,
+    "win": 0.35,
+    "win_low": 0.25,
+    "low_alt": 3.0,
+    "need": 2,
+    "cooldown": 0.2,
+    "thrust_rise": 0.028,
+    "vz_thr": 0.6,
+    "drop_thr": 0.4,
+    "yaw_thr": 0.15,
+    "jit_min": 0.2,
+    "jit_ratio": 4.0,
+    "err_min": 0.11,
+    "out_rise": 0.03,
+    "yaw_free_above": 60.0
+  },
+  "events": [
+    {
+      "t_trigger": 1698.732,
+      "t_decision": 1699.084,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        0.009,
+        -0.009
+      ],
+      "votes": 2,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.03981888477007545,
+          "thr": 0.028,
+          "ok": true
+        },
+        "sink": {
+          "value": 0.0394631871228189,
+          "thr": 0.6,
+          "ok": false,
+          "drop": 0.015472412109375
+        },
+        "yaw": {
+          "value": 0.03185286397881587,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.10234341199893521,
+          "thr": 0.2,
+          "ok": false
+        },
+        "track": {
+          "value": 0.2615499631984056,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": 0.0,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 1
+        }
+      },
+      "alt_at_trigger": 9.904,
+      "t_detect_s": 1698.732,
+      "boot_ms": 1698732,
+      "motor_est": 1,
+      "confirm_delay_ms": 352,
+      "delta_tilt_deg": 0.0,
+      "power_loss_est_pct": 0.0,
+      "power_left_pct": 100.0,
+      "estimator": "tilt_kinematic",
+      "recommended_controller": "ADAPTIVE"
+    }
+  ],
+  "rejected": [
+    {
+      "t_trigger": 1696.744,
+      "t_decision": 1697.096,
+      "motor_cand": 1,
+      "cos": [
+        0.999,
+        -0.999,
+        0.038,
+        -0.038
+      ],
+      "votes": 0,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.005218914344746528,
+          "thr": 0.028,
+          "ok": false
+        },
+        "sink": {
+          "value": 0.015555559723168582,
+          "thr": 0.6,
+          "ok": false,
+          "drop": 0.000335693359375
+        },
+        "yaw": {
+          "value": 0.01831475505050654,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.02973341457791543,
+          "thr": 0.2,
+          "ok": false
+        },
+        "track": {
+          "value": 0.07501182728681384,
+          "thr": 0.11,
+          "ok": false
+        },
+        "outputs": {
+          "value": 0.0,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 1
+        }
+      },
+      "alt_at_trigger": 9.941
+    },
+    {
+      "t_trigger": 1697.748,
+      "t_decision": 1698.1,
+      "motor_cand": 1,
+      "cos": [
+        1.0,
+        -1.0,
+        0.031,
+        -0.031
+      ],
+      "votes": 1,
+      "available": 6,
+      "signals": {
+        "thrust": {
+          "value": 0.02293886763562436,
+          "thr": 0.028,
+          "ok": false
+        },
+        "sink": {
+          "value": 0.03314633890341652,
+          "thr": 0.6,
+          "ok": false,
+          "drop": 0.010986328125
+        },
+        "yaw": {
+          "value": 0.01851361155736372,
+          "thr": 0.15,
+          "ok": false
+        },
+        "jitter": {
+          "value": 0.02653255654365922,
+          "thr": 0.2,
+          "ok": false
+        },
+        "track": {
+          "value": 0.13905890710326294,
+          "thr": 0.11,
+          "ok": true
+        },
+        "outputs": {
+          "value": 0.0,
+          "thr": 0.03,
+          "ok": false,
+          "out_motor": 1
+        }
+      },
+      "alt_at_trigger": 9.925
+    }
+  ]
+}
