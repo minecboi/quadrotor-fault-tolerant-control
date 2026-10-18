@@ -10,7 +10,7 @@ An end-to-end autonomous safety and control framework for quadrotors facing **si
 
 ---
 
-## 📖 Simple Summary: What Does This Project Do?
+## What Does This Project Do?
 
 When a standard four-rotor drone loses a motor mid-flight, it immediately loses torque balance, spins violently out of control, and crashes into the ground.
 
